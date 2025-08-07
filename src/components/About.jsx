@@ -31,7 +31,7 @@ export const About = () => {
               passionnants.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <a href="#conact" className="button">
+              <a href="#contact" className="button">
                 Contactez-Nous
               </a>
               <a
