@@ -9,16 +9,13 @@ import {
 import { SiDiscord } from "react-icons/si";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
-import { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 export const Contact = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
+  const [state, handleSubmit] = useForm("xvgqvkkg");
   const { toast } = useToast();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  if (state.succeeded) {
     setTimeout(() => {
       toast({
         title: "Message Envoyé",
@@ -26,10 +23,8 @@ export const Contact = () => {
           "Merci de nous avoir contacté. Nous reviendrons vers vous bientôt.",
         variant: "success",
       });
-      setIsSubmitting(false);
-      e.target.reset();
     }, 1500);
-  };
+  }
 
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
@@ -107,12 +102,7 @@ export const Contact = () => {
           </div>
           <div className="bg-card p-8 rounded-lg shadow-sm">
             <h3 className="text-2xl font-semibold mb-6">Envoyer un Message</h3>
-            <form
-              onSubmit={handleSubmit}
-              action="https://formspree.io/f/xvgqvkkg"
-              method="POST"
-              className="space-y-4"
-            >
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label
                   htmlFor="name"
@@ -146,6 +136,11 @@ export const Contact = () => {
                   focus:outline-none focus:ring-2 focus:ring-primary"
                   placeholder="johndoe@gmail.com"
                 />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
+                />
               </div>
               <div>
                 <label
@@ -162,11 +157,16 @@ export const Contact = () => {
                   focus:outline-none focus:ring-2 focus:ring-primary resize-none"
                   placeholder="Bonjour, j'aimerais en savoir plus sur..."
                 />
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
               </div>
               <br />
               <button
                 type="submit"
-                disabled={isSubmitting}
+                disabled={state.submitting}
                 className={cn(
                   "button w-full flex items-center justify-center gap-2",
                 )}
