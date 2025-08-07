@@ -3,7 +3,7 @@ import { StarBackground } from "../components/StarBackground";
 import { Navbar } from "../components/Navbar";
 import { HomeSection } from "../components/HomeSection";
 import { About } from "../components/About";
-import { Projects } from "../components/Projetcs";
+import { Projects } from "../components/Projects";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 import Term from "../components/Term";

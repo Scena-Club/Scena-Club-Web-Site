@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Logo from "@/assets/logo.png";
 
 const navItems = [
   { name: "À Propos de Nous", href: "#about" },
@@ -31,7 +32,7 @@ export const Navbar = () => {
       <div className="container flex items-center justify-between">
         <a className="flex item-center" href="#home">
           <img
-            src="src/assets/Print.png"
+            src={Logo}
             alt="Logo"
             className="relative z-10"
             width={45}
