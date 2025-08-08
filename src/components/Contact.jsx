@@ -9,22 +9,42 @@ import {
 import { SiDiscord } from "react-icons/si";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
-import { useForm, ValidationError } from "@formspree/react";
+import { useState } from "react";
 
 export const Contact = () => {
-  const [state, handleSubmit] = useForm("xvgqvkkg");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const { toast } = useToast();
 
-  if (state.succeeded) {
-    setTimeout(() => {
-      toast({
-        title: "Message Envoyé",
-        description:
-          "Merci de nous avoir contacté. Nous reviendrons vers vous bientôt.",
-        variant: "success",
-      });
-    }, 1500);
-  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    fetch("https://getform.io/f/apjzmxna", {
+      method: "POST",
+      body: new FormData(e.target),
+    })
+      .then(() => {
+        setTimeout(() => {
+          toast({
+            title: "Message envoyé",
+            description: "Merci de nous avoir contacté.",
+            variant: "success",
+          });
+          e.target.reset();
+        }, 1500);
+      })
+      .catch(() => {
+        setTimeout(() => {
+          toast({
+            title: "Erreur lors de l'envoi",
+            description: "Une erreur s'est produite.",
+            variant: "destructive",
+          });
+        }, 1500);
+      })
+      .finally(() => setIsSubmitting(false));
+  };
 
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
@@ -113,7 +133,7 @@ export const Contact = () => {
                 <input
                   type="text"
                   id="name"
-                  name="name"
+                  name="from_name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background
                   focus:outline-none focus:ring-2 focus:ring-primary"
@@ -130,16 +150,11 @@ export const Contact = () => {
                 <input
                   type="email"
                   id="email"
-                  name="email"
+                  name="from_email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background
                   focus:outline-none focus:ring-2 focus:ring-primary"
                   placeholder="johndoe@gmail.com"
-                />
-                <ValidationError
-                  prefix="Email"
-                  field="email"
-                  errors={state.errors}
                 />
               </div>
               <div>
@@ -157,21 +172,16 @@ export const Contact = () => {
                   focus:outline-none focus:ring-2 focus:ring-primary resize-none"
                   placeholder="Bonjour, j'aimerais en savoir plus sur..."
                 />
-                <ValidationError
-                  prefix="Message"
-                  field="message"
-                  errors={state.errors}
-                />
               </div>
               <br />
               <button
                 type="submit"
-                disabled={state.submitting}
+                disabled={isSubmitting}
                 className={cn(
                   "button w-full flex items-center justify-center gap-2",
                 )}
               >
-                Envoyer
+                {isSubmitting ? "Envoi..." : "Envoyer"}
                 <SendIcon size={16} />
               </button>
             </form>
