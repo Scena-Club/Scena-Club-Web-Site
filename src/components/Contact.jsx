@@ -6,7 +6,6 @@ import {
   MapPin,
   SendIcon,
 } from "lucide-react";
-import { SiDiscord } from "react-icons/si";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
@@ -113,9 +112,6 @@ export const Contact = () => {
                   target="_blank"
                 >
                   <FacebookIcon className="h-7 w-7 hover:text-primary transition-colors" />
-                </a>
-                <a href="https://discord.gg/FCn9AtWhBZ" target="_blank">
-                  <SiDiscord className="h-7 w-7 hover:text-primary transition-colors" />
                 </a>
               </div>
             </div>
