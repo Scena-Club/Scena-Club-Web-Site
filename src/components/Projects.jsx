@@ -4,10 +4,9 @@ import Image2 from "@/assets/Image2.jpg";
 import Image3 from "@/assets/Image3.png";
 const projects = [
   {
-    id: 1,
     title: "Automatisation Agricole",
     description: "Un système d'automatisation pour la gestion des cultures.",
-    image: [Image1],
+    image: Image1,
     tags: ["IoT", "Cultures", "Innovation"],
     link: "https://drive.google.com/file/d/1H0eef1Vx3tlrJgDM56BVsfUv5vF0LlHv/view?usp=drive_link",
   },
@@ -15,16 +14,16 @@ const projects = [
     title: "Drones Anti-Incendie",
     description:
       "Un projet de drones pour la détection et la lutte contre les incendies.",
-    image: [Image2],
-    tags: ["Drones", "Sécurité", "Incendie"],
+    image: Image2,
+    tags: ["Drones", "Sécurité", "Feu"],
     link: "https://drive.google.com/file/d/1vJloYB1GBKE1NVCh_3Th96hMwt2ntx_U/view?usp=drive_link",
   },
   {
     title: "Scoring Taekwondo",
     description:
       "Un système de scoring automatisé pour les compétitions de taekwondo.",
-    image: [Image3],
-    tags: ["Sport", "Taekwondo", "Scoring"],
+    image: Image3,
+    tags: ["Sport", "Capteurs", "Scoring"],
     link: "https://drive.google.com/file/d/1hDppk2jW5JxK7No03ER4wrRBh9wnljtg/view?usp=drive_link",
   },
 ];
@@ -50,8 +49,7 @@ export const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover
-                transition-transform duration-500 group-hover:scale-115"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="p-6">

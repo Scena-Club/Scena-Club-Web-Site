@@ -5,10 +5,11 @@ import Logo from "@/assets/logo.png";
 
 const navItems = [
   { name: "À Propos de Nous", href: "#about" },
+  { name: "Évenements", href: "#events" },
   { name: "Projets", href: "#projects" },
+  { name: "Formations", href: "#formation" },
   { name: "Contacts", href: "#contact" },
 ];
-
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
