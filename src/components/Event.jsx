@@ -9,14 +9,14 @@ const events = [
     description:
       "Le club Scena a participé à la journée d'orientation aux profit des étudiants de 1ère Année Licence en tronc commun Science et Technologie",
     image: Image4,
-    link: "https://drive.google.com/file/d/1H0eef1Vx3tlrJgDM56BVsfUv5vF0LlHv/view?usp=drive_link",
+    link: "https://www.instagram.com/p/DJU7xLgCIrt/?img_index=1",
   },
   {
     title: "Afrobot 2025 - Compétition de Robot Suiveur de ligne",
     description:
       "Le club Scena a participé à la compétition de robot suiveur de ligne d'Afrobot 2025 et a effectué un parcours honorable durant sa première participation",
     image: Image5,
-    link: "https://drive.google.com/file/d/1H0eef1Vx3tlrJgDM56BVsfUv5vF0LlHv/view?usp=drive_link",
+    link: "https://www.instagram.com/p/DL0u64wtEBc/?img_index=1",
   },
 ];
 
