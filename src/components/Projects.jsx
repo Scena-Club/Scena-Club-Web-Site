@@ -1,4 +1,4 @@
-import { ArrowRight, ExternalLinkIcon, Github, GithubIcon } from "lucide-react";
+import { ArrowRight, GithubIcon } from "lucide-react";
 import Image1 from "@/assets/Image1.jpg";
 import Image2 from "@/assets/Image2.jpg";
 import Image3 from "@/assets/Image3.png";
@@ -8,23 +8,19 @@ const projects = [
     description: "Un système d'automatisation pour la gestion des cultures.",
     image: Image1,
     tags: ["IoT", "Cultures", "Innovation"],
-    link: "https://drive.google.com/file/d/1H0eef1Vx3tlrJgDM56BVsfUv5vF0LlHv/view?usp=drive_link",
   },
   {
     title: "Drones Anti-Incendie",
-    description:
-      "Un projet de drones pour la détection et la lutte contre les incendies.",
+    description: "Drones pour la détection et la lutte contre les incendies.",
     image: Image2,
     tags: ["Drones", "Sécurité", "Feu"],
-    link: "https://drive.google.com/file/d/1vJloYB1GBKE1NVCh_3Th96hMwt2ntx_U/view?usp=drive_link",
   },
   {
     title: "Scoring Taekwondo",
     description:
-      "Un système de scoring automatisé pour les compétitions de taekwondo.",
+      "Système de scoring automatisé pour les compétitions de taekwondo.",
     image: Image3,
     tags: ["Sport", "Capteurs", "Scoring"],
-    link: "https://drive.google.com/file/d/1hDppk2jW5JxK7No03ER4wrRBh9wnljtg/view?usp=drive_link",
   },
 ];
 
@@ -64,17 +60,6 @@ export const Projects = () => {
                 <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
                 </p>
-                <div className="flex justify-between items-center">
-                  <div className="flex space-x-3">
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLinkIcon size={20} />
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
           ))}

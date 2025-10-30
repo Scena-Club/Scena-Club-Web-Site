@@ -2,13 +2,15 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Logo from "@/assets/logo.png";
+import { Link } from "react-router-dom";
 
 const navItems = [
-  { name: "À Propos de Nous", href: "#about" },
+  { name: "À Propos de Nous", href: "#home" },
   { name: "Évenements", href: "#events" },
   { name: "Projets", href: "#projects" },
   { name: "Formations", href: "#formation" },
   { name: "Contacts", href: "#contact" },
+  { name: "Bibliothèque", href: "/library" },
 ];
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,7 +33,7 @@ export const Navbar = () => {
       )}
     >
       <div className="container flex items-center justify-between">
-        <a className="flex item-center" href="#home">
+        <Link to="/" className="flex item-center">
           <img
             src={Logo}
             alt="Logo"
@@ -39,17 +41,17 @@ export const Navbar = () => {
             width={45}
             height={45}
           />
-        </a>
+        </Link>
         <div className="hidden md:flex space-x-8">
           {navItems.map((item, key) => (
-            <a
+            <Link
               key={key}
-              href={item.href}
+              to={item.href}
               className="text-foreground/75
               hover:text-primary transition-colors duration-300"
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
         <button
@@ -71,14 +73,14 @@ export const Navbar = () => {
         >
           <div className="flex flex-col space-y-8 text-xl">
             {navItems.map((item, key) => (
-              <a
+              <Link
                 key={key}
-                href={item.href}
+                to={item.href}
                 className="text-foreground/75 hover:text-primary transition-colors duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
