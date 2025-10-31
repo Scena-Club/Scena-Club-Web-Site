@@ -12,7 +12,7 @@ export const Footer = () => {
       </p>
       <div className="animate-bounce">
         {/* Lien vers le haut de la page */}
-        <a href="#homer">
+        <a href="#lib">
           <ArrowUp
             className="rounded-full text-primary bg-primary/10
           hover:bg-primary/20 mt-2 animate-pulse"
