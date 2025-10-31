@@ -9,6 +9,7 @@ const events = [
     description:
       "Le club Scena a participé à la journée d'orientation aux profit des étudiants de 1ère Année Licence en tronc commun Science et Technologie",
     image: Image4,
+    id: 1,
     link: "https://www.instagram.com/p/DJU7xLgCIrt/?img_index=1",
   },
   {
@@ -16,6 +17,7 @@ const events = [
     description:
       "Le club Scena a participé à la compétition de robot suiveur de ligne d'Afrobot 2025 et a effectué un parcours honorable durant sa première participation",
     image: Image5,
+    id: 2,
     link: "https://www.instagram.com/p/DL0u64wtEBc/?img_index=1",
   },
 ];
@@ -33,9 +35,9 @@ export const Event = () => {
           compétences et mettre leur connaissances à l'épreuve.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {events.map((event, key) => (
+          {events.map((event) => (
             <div
-              key={key}
+              key={event.id}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
               <div>

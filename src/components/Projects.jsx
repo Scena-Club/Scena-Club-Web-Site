@@ -7,12 +7,14 @@ const projects = [
     title: "Automatisation Agricole",
     description: "Un système d'automatisation pour la gestion des cultures.",
     image: Image1,
+    id: 1,
     tags: ["IoT", "Cultures", "Innovation"],
   },
   {
     title: "Drones Anti-Incendie",
     description: "Drones pour la détection et la lutte contre les incendies.",
     image: Image2,
+    id: 2,
     tags: ["Drones", "Sécurité", "Feu"],
   },
   {
@@ -20,6 +22,7 @@ const projects = [
     description:
       "Système de scoring automatisé pour les compétitions de taekwondo.",
     image: Image3,
+    id: 3,
     tags: ["Sport", "Capteurs", "Scoring"],
   },
 ];
@@ -36,9 +39,9 @@ export const Projects = () => {
           l'innovation et la technologie dans divers domaines.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, key) => (
+          {projects.map((project) => (
             <div
-              key={key}
+              key={project.id}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
               <div>
@@ -50,8 +53,11 @@ export const Projects = () => {
               </div>
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag) => (
-                    <span className="text-secondary-foreground bg-primary/20 font-medium px-2 py-1 rounded-full">
+                  {project.tags.map((tag, index) => (
+                    <span
+                      key={index}
+                      className="text-secondary-foreground bg-primary/20 font-medium px-2 py-1 rounded-full"
+                    >
                       {tag}
                     </span>
                   ))}
