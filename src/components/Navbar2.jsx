@@ -10,7 +10,7 @@ const navItems = [
   { name: "Projets", href: "/" },
   { name: "Formations", href: "/" },
   { name: "Contacts", href: "/" },
-  { name: "Bibliothèque", href: "/library" },
+  { name: "Bibliothèque", href: "#homer" },
 ];
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);

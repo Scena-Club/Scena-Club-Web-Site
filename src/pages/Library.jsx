@@ -2,7 +2,7 @@ import { ThemeToggle } from "../components/ThemeToggle";
 import { StarBackground } from "../components/StarBackground";
 import { Navbar } from "../components/Navbar2";
 import { Lib } from "../components/Lib";
-import { Footer } from "../components/Footer";
+import { Footer } from "../components/Footer2";
 
 export const Library = () => {
   return (

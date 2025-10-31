@@ -14,7 +14,7 @@ export const Lib = () => {
   );
 
   return (
-    <section className="py-24 px-4 relative bg-secondary/30">
+    <section className="py-24 px-4 relative bg-secondary/30" id="homer">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
           La <span className="text-primary">Bibliothèque </span>du Scena
