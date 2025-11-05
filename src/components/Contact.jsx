@@ -5,7 +5,7 @@ import {
   MapPin,
   SendIcon,
 } from "lucide-react";
-import Discord from "simple-icons-react";
+import { FaDiscord, FaRProject } from "react-icons/fa";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
@@ -99,7 +99,7 @@ export const Contact = () => {
               <h4 className="font-medium mb-4">Réseaux Sociaux</h4>
               <div className="flex space-x-4 justify-center">
                 <a href="https://discord.gg/FCn9AtWhBZ" target="_blank">
-                  <Discord className="h-7 w-7 hover:text-primary transition-colors" />
+                  <FaDiscord className="h-7 w-7 hover:text-primary transition-colors" />
                 </a>
                 <a href="https://www.instagram.com/scena_club/" target="_blank">
                   <InstagramIcon className="h-7 w-7 hover:text-primary transition-colors" />
