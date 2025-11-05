@@ -1,11 +1,11 @@
 import {
   FacebookIcon,
   InstagramIcon,
-  LinkedinIcon,
   MailIcon,
   MapPin,
   SendIcon,
 } from "lucide-react";
+import Discord from "simple-icons-react/icons/discord";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
@@ -98,11 +98,8 @@ export const Contact = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4">Réseaux Sociaux</h4>
               <div className="flex space-x-4 justify-center">
-                <a
-                  href="https://www.linkedin.com/in/scena-club-17a598378"
-                  target="_blank"
-                >
-                  <LinkedinIcon className=" h-7 w-7 hover:text-primary transition-colors" />
+                <a href="https://discord.gg/FCn9AtWhBZ" target="_blank">
+                  <Discord className="h-7 w-7 hover:text-primary transition-colors" />
                 </a>
                 <a href="https://www.instagram.com/scena_club/" target="_blank">
                   <InstagramIcon className="h-7 w-7 hover:text-primary transition-colors" />
