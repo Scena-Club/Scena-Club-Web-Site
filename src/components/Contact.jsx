@@ -5,7 +5,7 @@ import {
   MapPin,
   SendIcon,
 } from "lucide-react";
-import Discord from "simple-icons-react/icons/discord";
+import Discord from "simple-icons-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
