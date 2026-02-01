@@ -255,7 +255,7 @@ import Livre254 from "@/assets/livres/Level Up! The Guide to Great Video Game De
 import Livre255 from "@/assets/livres/Linux basics for hackers - OccupyTheWeb.jpg";
 import Livre256 from "@/assets/livres/Linux for Networking Professionals - Rob Vanderbink.jpg";
 import Livre257 from "@/assets/livres/Linux Firewalls.book - Michael Rash.jpg";
-import Livre258 from "@/assets/livres/Linux Pour les Nuls - Richard Blum.jpg";
+import Livre258 from "@/assets/livres/Linux embarqué - Pierre Ficheux.jpg";
 import Livre259 from "@/assets/livres/Linux Server Hacks 100 Industrial - Rob Flickenger.jpg";
 import Livre260 from "@/assets/livres/Linux Smart Homes for Dummies - Neil Cherry.jpg";
 import Livre261 from "@/assets/livres/Linux.Shell .Scripting.Cookbook - Shantanu Tushar & Sarath Lakshman.jpg";
@@ -3015,11 +3015,20 @@ const books = [
     recommended: false,
   },
   {
+    title: "Linux Embarqué",
+    author: "Pierre Ficheux",
+    category: ["Système & Administration"],
+    link: "https://drive.google.com/file/d/1ofz1WnENGsmCFnVmHpiJgTM4FhGvJzob/view?usp=drive_link",
+    id: 266,
+    img: Livre258,
+    recommended: false,
+  },
+  {
     title: "Linux Firewalls",
     author: "Michael Rash",
     category: ["Cybersécurité", "Système & Administration"],
     link: "https://drive.google.com/file/d/15KYIrPsieDhGofC8MhfjDEip4neMpA7P/view?usp=drive_link",
-    id: 266,
+    id: 267,
     img: Livre257,
     recommended: false,
   },
@@ -3028,17 +3037,8 @@ const books = [
     author: "Rob Vanderbink",
     category: ["Système & Administration", "Réseaux & Télécoms"],
     link: "https://drive.google.com/file/d/16ziK8jmw-TIfKRnLZvQmlWf-4w-yBfba/view?usp=drive_link",
-    id: 267,
-    img: Livre256,
-    recommended: false,
-  },
-  {
-    title: "Linux Pour les Nuls",
-    author: "Richard Blum",
-    category: ["Système & Administration"],
-    link: "https://drive.google.com/file/d/1dKmt_0w3UZ76s1oN0MQGVVCb113Icb_L/view?usp=drive_link",
     id: 268,
-    img: Livre258,
+    img: Livre256,
     recommended: false,
   },
   {
