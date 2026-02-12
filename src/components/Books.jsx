@@ -301,7 +301,7 @@ import Livre300 from "@/assets/livres/Modern Full-Stack Development_ Using TypeS
 import Livre301 from "@/assets/livres/Modernizing Enterprise Java - Markus Eisele & Natale Vinto.jpg";
 import Livre302 from "@/assets/livres/MongoDB_ The Definitive Guide - Shannon Bradshaw & Eoin Brazil & Kristina Chodorow.jpg";
 import Livre303 from "@/assets/livres/MySQL Database Service Revealed - Charles Bell.jpg";
-import Livre304 from "@/assets/livres/Negociation Commerciale en Pratique, La - Patrick David.jpg";
+import Livre304 from "@/assets/livres/Large Language Models in Cybersecurity.jpg";
 import Livre305 from "@/assets/livres/Network Science Models for Data Analytics Automation - Xin W.Chen.jpg";
 import Livre306 from "@/assets/livres/Networking All-in-One For Dummies - Doug Lowe.jpg";
 import Livre307 from "@/assets/livres/Networking Fundamentals Develop the Networking Skills -- Gordon Davies -- ( WeLib.org ) - Gordon Davies.jpg";
@@ -2897,10 +2897,10 @@ const books = [
     recommended: false,
   },
   {
-    title: "La Negociation Commerciale en Pratique",
-    author: "Patrick David",
-    category: ["Business & Entrepreneuriat"],
-    link: "https://drive.google.com/file/d/1UG5s6kNB3eejla-JNrppVkb9eoynsli6/view?usp=drive_link",
+    title: "Large Language Models in Cybersecurity",
+    author: "Andrei Kucharavy and Octave Plancherel and Valentine Mulder and Alain Mermoud and Vincent Lenders",
+    category: ["Cybersécurité","IA & Machine Learning"],
+    link: "https://drive.google.com/file/d/1ghq3PEuhaWTm0NeTccU_MeU78gYEtHwf/view?usp=drive_link",
     id: 252,
     img: Livre304,
     recommended: false,
