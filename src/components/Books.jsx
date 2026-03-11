@@ -265,7 +265,7 @@ import Livre264 from "@/assets/livres/Machine Learning For Dummies - John Paul M
 import Livre265 from "@/assets/livres/Machine Learning with Python - Amin Zollanvari.jpg";
 import Livre266 from "@/assets/livres/Machine Learning with Pytorch and Scikit-Learn - Sebastian Raschka & Yuxi Liu & Vahid Mirjalili & Dmytro Dzhulgakov.jpg";
 import Livre267 from "@/assets/livres/Make_ Electronics, Third Edition - Charles Platt.jpg";
-import Livre268 from "@/assets/livres/Make_ Getting Started with 3D Printing - Liza Wallach Kloski & Nick Kloski.jpg";
+import Livre268 from "@/assets/livres/Getting Started with RFID - Tom Igoe.jpg";
 import Livre269 from "@/assets/livres/Make_ Getting Started with Soldering - Marc de Vinck.jpg";
 import Livre270 from "@/assets/livres/Make_ How to Use a Breadboard - Sean Michael Ragan & Jody Culkin.jpg";
 import Livre271 from "@/assets/livres/Make_ More Electronics - Charles Platt.jpg";
@@ -3171,10 +3171,10 @@ const books = [
     recommended: true,
   },
   {
-    title: "Make: Getting Started with 3D Printing",
-    author: "Liza Wallach Kloski & Nick Kloski",
-    category: ["Design & Modélisation"],
-    link: "https://drive.google.com/file/d/15g3bWGvzvrsu8XKQLEqCnvaWnNVAhlAR/view?usp=drive_link",
+    title: "Make: Getting Started with RFID",
+    author: "Tom Igoe",
+    category: ["Électronique & Génie Électrique"],
+    link: "https://drive.google.com/file/d/1ToC_JrzD6BpXraWZ8MNb868GH4DGhIm0/view?usp=drive_link",
     id: 282,
     img: Livre268,
     recommended: false,
@@ -3183,8 +3183,7 @@ const books = [
     title: "Make: Getting Started with Soldering",
     author: "Marc de Vinck",
     category: [
-      "Gestion de Projet & Méthodologies",
-      "Électronique & Génie Électrique",
+      "Électronique & Génie Électrique"
     ],
     link: "https://drive.google.com/file/d/1wPqhv4mTkblaYxSEs8Xr30kN8P3Mmosq/view?usp=drive_link",
     id: 283,
@@ -3195,8 +3194,7 @@ const books = [
     title: "Make: How to Use a Breadboard",
     author: "Sean Michael Ragan & Jody Culkin",
     category: [
-      "Gestion de Projet & Méthodologies",
-      "Électronique & Génie Électrique",
+      "Électronique & Génie Électrique"
     ],
     link: "https://drive.google.com/file/d/1DSghflFL-5A-ihG_4PgmQ3ZyQ6t66tln/view?usp=drive_link",
     id: 284,
