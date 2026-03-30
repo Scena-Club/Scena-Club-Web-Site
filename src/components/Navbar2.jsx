@@ -5,12 +5,12 @@ import Logo from "@/assets/logo.png";
 import { Link } from "react-router-dom";
 
 const navItems = [
-  { name: "À Propos de Nous", href: "/" },
-  { name: "Évenements", href: "/" },
-  { name: "Projets", href: "/" },
-  { name: "Formations", href: "/" },
-  { name: "Contacts", href: "/" },
-  { name: "Bibliothèque", href: "#lib" },
+  { name: "À Propos de Nous", href: "/#home" },
+  { name: "Évenements", href: "/#events" },
+  { name: "Projets", href: "/#projects" },
+  { name: "Formations", href: "/#formation" },
+  { name: "Contacts", href: "/#contact" },
+  { name: "Bibliothèque", href: "/library" },
 ];
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);

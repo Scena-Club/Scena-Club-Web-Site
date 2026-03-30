@@ -4,7 +4,6 @@ import { Home } from "./pages/Home";
 import { Library } from "./pages/Library";
 import { NotFound } from "./pages/NotFound";
 import { Toaster } from "@/components/ui/toaster";
-import { Navbar } from "@/components/Navbar";
 
 function ScrollHandler() {
   const location = useLocation();
@@ -34,12 +33,11 @@ function App() {
     <>
       <Toaster />
       <BrowserRouter>
-        <Navbar />
         <ScrollHandler />
         <Routes>
           <Route index element={<Home />} />
           <Route path="/" element={<Home />} />
-          <Route path="/Library" element={<Library />} />
+          <Route path="/library" element={<Library />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
